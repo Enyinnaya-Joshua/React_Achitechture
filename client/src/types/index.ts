@@ -3,3 +3,7 @@ export type Iuser = {
     email: string;
     password: string;
 }
+
+export enum Urls {
+    user = "/user.dashboard"
+}
