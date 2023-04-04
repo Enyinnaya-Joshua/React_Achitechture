@@ -1,18 +1,9 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-// import App from './App';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {RouterProvider} from "react-router-dom"
 
-import {element} from "./routes/AllRoutes"
-import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
-
-import {ReactQueryDevtools} from "@tanstack/react-query-devtools"
-import Loading from './components/Loading';
-
-
-const client = new QueryClient()
 
 
 const root = ReactDOM.createRoot(
@@ -20,13 +11,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-<Suspense  fallback={<Loading />}>
-  <QueryClientProvider  client={client}>
-<RouterProvider router={element} />
-<ReactQueryDevtools />
-  </QueryClientProvider>
-</Suspense>
-    {/* <App /> */}
+    <App />
   </React.StrictMode>
 );
 
