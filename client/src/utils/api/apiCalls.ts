@@ -1,4 +1,4 @@
-import { Iuser } from "../../types";
+// import { Iuser } from "../../types";
 import axios from "./axios";
 
 export const fetchDictionary = async () => {

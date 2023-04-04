@@ -1,13 +1,12 @@
+import React from 'react'
 
-import React from "react";
+const ErrorBoudary = () => {
+  return (
+    <div>
+        <h3>OOPS..</h3>
+        <p>something went wrong....</p>
+    </div>
+  )
+}
 
-const ErrorBoundary = () => {
-	return (
-		<div>
-			<h3>OPPS..</h3>
-			<p>something went wrong....</p>
-		</div>
-	);
-};
-
-export default ErrorBoundary;
+export default ErrorBoudary
